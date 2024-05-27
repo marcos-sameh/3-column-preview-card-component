@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body ,
+button{
+    background-color: hsl(0, 0%, 95%);
+}
+h2{
+    color: hsl(0, 0%, 95%);
+}
+.clr{
+    clear: both;
+}
+.main{
+    width: 70%;
+    margin: 100px auto;
+}
+.col{
+    width: calc(100% / 3);
+    float: left;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.col p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.col-1{
+    background-color: hsl(31, 77%, 52%);
+}
+.col-1 button{
+    color: hsl(31, 77%, 52%);
+}
+.col-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.col-2 button{
+    color: hsl(184, 100%, 22%)
+}
+.col-3{
+    background-color: hsl(179, 100%, 13%);
+}
+.col-3 button{
+    color: hsl(179, 100%, 13%);
+}
+.col button{
+    padding: 12px 24px;
+    border: 2px solid transparent;
+     cursor: pointer;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.col button:hover{
+     background-color: transparent;
+     color: white;
+     border-color: white;
+}
+/* Styling Small Screen */
+
+@media only screen and (max-width: 750px) {
+    .main{
+        width: 90%;
+        margin: 100px auto;
+    }
+    .col{
+        width: 100%;
+    } 
+  }
